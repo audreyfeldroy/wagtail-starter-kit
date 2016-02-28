@@ -72,11 +72,11 @@ The `django-starter` provides you with the following feature set:
 
     Are you working on a Proof of Concept and don't need a full blown database?  No worries, this project gives you the choice of sqlite or postgres and everything will be configured accordingly.
 
-* lean project layout - no apps, minimal base template
+* lean project layout - HTML5 Boilerplate + Home App
 
-    This project tries to provide a lean project layout.  No apps.  Only a single, unstyled template.
+    This project tries to provide a lean project layout.  HTML5 boilerplate inspired base.html file.  In addition, I have included a bare bones Home app which will start you off with a wagtail page and also initialize a site for you!
 
-* Configured dev setup
+* Configured Django dev setup
 
     Providing you with some essential tools to get you up and running.  This includes:
 
@@ -84,6 +84,19 @@ The `django-starter` provides you with the following feature set:
     * django-nose
     * coverage
     * django-debug-toolbar
+
+* Complete front end build workflow
+
+    I have provided a complete front end workflow that includes
+
+    * gulp
+    * browsersync
+    * webpack
+    * tape
+    * es6 support
+    * eslint
+
+    and more!
 
 * Collaboration - dotfiles and documentation structure
 
