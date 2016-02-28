@@ -1,6 +1,4 @@
-const a = 5;
-
-console.log(a);
+/* your JS her */
 
 if (module.hot) {
   module.hot.accept();

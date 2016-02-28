@@ -35,17 +35,19 @@ With the above completed, open a new terminal window and move into the ``{{cooki
 
     vagrant ssh
 
-**3. Install npm packages**
-
-.. code-block:: bash
-
-    npm install
-
-**4. Turn on your Django dev server**
+**3. Turn on your Django dev server**
 
 .. code-block:: bash
 
     django-admin runserver 0.0.0.0:8000
+
+At this point we will open up a new terminal window.  Move into the ``{{cookiecutter.repo_name}}`` root directory and run the following commands on your local, not inside your vagrant machine.
+
+**4. Install npm packages**
+
+.. code-block:: bash
+
+    npm install
 
 **5. Start the development workflow**
 

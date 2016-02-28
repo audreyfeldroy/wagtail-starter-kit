@@ -12,7 +12,9 @@ module.exports = function () {
     gulp.task('css-dev', function() {
         return gulp.src(toolConfigs.paths.sources.indexCSS)
             .pipe(sourcemaps.init())
-            .pipe(stylus())
+            .pipe(stylus({
+                 'include css': true
+            }))
             .pipe(autoprefixer())
             .pipe(csslint())
             .pipe(sourcemaps.write())
