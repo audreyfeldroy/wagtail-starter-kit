@@ -10,7 +10,7 @@ set admin_email  [lindex $argv 4]
 set admin_pass   [lindex $argv 5]
 
 # spawn python $project_dir/manage.py createsuperuser
-spawn python ${repo_dir}/manage.py createsuperuser
+spawn python ${repo_dir}/src/server/manage.py createsuperuser
 
 # If this is left blank, user will be root.  This is because,
 # by default, vagrant provisions as the root user.
