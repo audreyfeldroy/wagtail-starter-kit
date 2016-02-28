@@ -139,7 +139,7 @@ cat << EOF >> /home/vagrant/.bashrc
     # login to virtualenv
     workon ${repo_name}3
     # project directory
-    cd ${repo_dir}
+    cd ${repo_dir}/src/server
     export PYTHONDONTWRITEBYTECODE=1
 EOF
 
