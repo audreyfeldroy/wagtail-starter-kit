@@ -6,7 +6,7 @@
     "django_reqs_path": "/home/vagrant/{{cookiecutter.repo_name}}/src/server/requirements/dev.txt",
     "django_default_settings": "config.settings.dev",
     "virtualenv_dir_path": "/home/vagrant/.virtualenvs",
-    "db_engine": ["sqlite", "postgres" ],
+    "db_engine": ["postgres", "sqlite"],
     "db_user": "dev",
     "db_password": "{{cookiecutter.repo_name}}_{{cookiecutter.db_user}}",
     "db_host": "localhost",
@@ -16,6 +16,6 @@
     "author_email": "admin@gmail.com",
     "domain_name": "example.com",
     "license": ["MIT", "Apache", "GPLv3", "No License" ],
-    "current_year": "2015",
+    "current_year": "2016",
     "full_legal_name_of_project_owner": ""
 }

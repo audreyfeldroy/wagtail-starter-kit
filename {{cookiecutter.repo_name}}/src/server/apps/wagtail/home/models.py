@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from wagtail.wagtailcore.models import Page
-from settings import APP_DIR
+from config.settings.base import APP_DIR
 
 
 class HomePage(Page):
