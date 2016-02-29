@@ -9,13 +9,13 @@ const webpack         = require('webpack');
 */
 
 const PATHS = {
-  index: path.join(__dirname, '../../src/server/static/js/index.js'),
+  index: path.join(__dirname, '../../src/server/static/javascripts/index.js'),
   build: path.join(__dirname, '../../build/js'),
-  javascripts: path.join(__dirname, '../../src/server/static/js/'),
-  styles: path.join(__dirname, '../../src/server/static/sylus/'),
+  javascripts: path.join(__dirname, '../../src/server/static/javascripts/'),
+  styles: path.join(__dirname, '../../src/server/static/stylesheets/'),
   eslint: path.resolve(__dirname, './.eslintrc'),
-  testIndex: path.resolve(__dirname, '../../tests/js/index.js'),
-  tests: path.resolve(__dirname, '../../tests/js/'),
+  testIndex: path.resolve(__dirname, '../../tests/javascripts/index.js'),
+  tests: path.resolve(__dirname, '../../tests/javascripts/'),
 };
 
 /*

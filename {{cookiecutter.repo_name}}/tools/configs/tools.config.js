@@ -8,8 +8,8 @@ module.exports = {
 
     paths: {
         watch: {
-            javascripts: path.resolve(__dirname, '../../src/server/static/**/*.js'),
-            styles: path.resolve(__dirname, '../../src/server/static/**/*.styl'),
+            javascripts: path.resolve(__dirname, '../../src/server/static/javascripts/**/*.js'),
+            stylesheets: path.resolve(__dirname, '../../src/server/static/stylesheets/**/*.styl'),
             html: [
                 path.resolve(__dirname, '../../src/server/templates/**/*.html'),
             ],
@@ -17,8 +17,8 @@ module.exports = {
         },
 
         sources: {
-            indexJS:  path.resolve(__dirname, '../../src/server/static/js/index.js'),
-            indexCSS: path.resolve(__dirname, '../../src/server/static/stylus/index.styl'),
+            indexJS:  path.resolve(__dirname, '../../src/server/static/javascripts/index.js'),
+            indexCSS: path.resolve(__dirname, '../../src/server/static/stylesheets/main.styl'),
         },
 
         dest: {
