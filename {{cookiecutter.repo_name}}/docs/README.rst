@@ -9,9 +9,42 @@ GETTING STARTED
 
 Hey there and welcome to **{{cookiecutter.repo_name}}**'s documentation.  Hopefully you will be able to find some answers here.  If you have already completed the `quickstart`_ and are still looking for more info, this is the place.  Below you will find a little more information about the *quickstart* process.
 
-**django app - home**
+server side
+-----------
+
+**App - home**
 
 This project starts you off with a *home* page.  The app does not really do much, it's more of a placeholder.  What is nice about it is that there is a migration file that creates the page for your and initializes you site.  This is about 4-8 steps removed from the process.  This is implemented by Wagtail itself in their ``wagtail start`` project template.  Check out `Extend the HomePage model`_ in wagtails documentation to see how you can work with this.
+
+**Favicon**
+
+The favicon is configured to be served in two way for this project:
+
+* ``config/urls.py``
+* ``link`` tag in ``base.html``
+
+The reason for both is browser behavior can be strange for favicons.  This is an extra measure to help make sure that the favicon is handled correctly.  For more information read `Fail Proof Favicons`_.
+
+client side
+-----------
+
+This project uses stylus as the default, hoever, the structure of the project is preprocessor agnostic both in the way that the ``static`` dir is setup and in the way that the gulp task ``css-dev`` and ``css-prod`` are setup.  If you do not want to use ``stylus`` simply head over to the ``tools/tasks`` directory and change the ``stylus`` variable to the preprocessor of your choice.
+
+error pages
+-----------
+
+This project comes with templates for ``400``, ``404`` and ``500``.  I have provided urls in the ``config/urls.py`` file so that you can test these while debug mode is set to ``True``.  To see what they look like, you can visit
+
+http://localhost:8111/400
+
+http://localhost:8111/404
+
+http://localhost:8111/500
+
+Keep in mind that when you are styling these, it is good practice to keep the styles and javascript inline just to be safe.
+
+commands
+--------
 
 **django-admin**
 
@@ -76,4 +109,5 @@ This section outlines how you want people to contribute to your project.
 .. _quickstart: http://google.ca
 .. _standalone django scripts: http://www.b-list.org/weblog/2007/sep/22/standalone-django-scripts/
 .. _Extend the HomePage model: http://docs.wagtail.io/en/v1.3.1/getting_started/tutorial.html
+.. _Fail Proof Favicons: http://staticfiles.productiondjango.com/blog/failproof-favicons/
 
