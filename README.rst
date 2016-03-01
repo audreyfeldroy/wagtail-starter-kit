@@ -1,15 +1,15 @@
-**************
-Django Starter
-**************
+*******************
+Wagtail Starter Kit
+*******************
 
-Welcome to Django Starter, a cookiecutter template for Django Projects.
+Welcome to Wagtail Starter Kit, a cookiecutter template for Django Projects.
 
 Overview
 ========
 
-Django Starter provides you with a flexible starting point for your Django project.  Included in this template is a Django development environment provided by vagrant, a project layout based on pydanny's `cookiecutter django`_ and `Two Scoops of Django`_ and a lean set of dependencies.  The goal is to provide you with everything you need to quickly and easily start a new Django project.
+Wagtail Starter Kit provides you with a flexible starting point for your Django project.  Included in this template is a Django development environment provided by vagrant, a project layout based on pydanny's `cookiecutter django`_ and `Two Scoops of Django`_ and a lean set of dependencies.  The goal is to provide you with everything you need to quickly and easily start a new Django project.
 
-Django Starter uses a scaffolding tool called `cookiecutter`_.  Cookiecutter is similar to `Yeoman`_.  These tools are used to build out entire projects for you instead of you having to create files manually and modify their configurations.
+Wagtail Starter Kit uses a scaffolding tool called `cookiecutter`_.  Cookiecutter is similar to `Yeoman`_.  These tools are used to build out entire projects for you instead of you having to create files manually and modify their configurations.
 
 .. _cookiecutter django: https://github.com/pydanny/cookiecutter-django
 .. _Two Scoops of Django: https://www.twoscoopspress.com/products/two-scoops-of-django-1-8
@@ -31,11 +31,11 @@ Quick Start
 
        pip install cookiecutter
 
-2. Build your Django project based on django-starter
+2. Build your Django project based on wagtail starter kit
 
    .. code-block:: bash
 
-       cookiecutter https://github.com/tkjone/django-starter.git
+       cookiecutter https://github.com/tkjone/wagtail-starter-kit.git
 
 You are going to be prompted to answer some questions about your project and the answers you provide are used build and configure your it.  These questions are called `prompts`  If you leave a `prompts` blank, Cookiecutter will use the default answer in the square brackets.  For a list of the prompts used by this template, pleasse see the `prompts documentation`_
 
@@ -47,7 +47,7 @@ For example, let us pretend your a huge fan of Taye Diggs and you want to make a
 Out of the Box
 ==============
 
-The `django-starter` provides you with the following feature set:
+The `wagtail starter kit` provides you with the following feature set:
 
 
 * Django 1.9.x
@@ -100,7 +100,7 @@ The `django-starter` provides you with the following feature set:
 
 * Collaboration - dotfiles and documentation structure
 
-    Documentation is important, django-starter provides you with a basic documentation structure that and dot-files for improved collaboration.
+    Documentation is important, wagtail-starter-kit provides you with a basic documentation structure that and dot-files for improved collaboration.
 
 .. _12 factor app: http://12factor.net/
 
@@ -121,9 +121,9 @@ Constraints
 Deeper Dive
 ===========
 
-Check out `django starters`_ for a step by step guide that explains this project in great detail.  Django Starters is built as a learning tool to help early and intermediate django developers get a better understanding, through practical application, of how to setup and configure a Django project.
+Check out `wagtail starter kit`_ for a step by step guide that explains this project in great detail.  Wagtail starter kit is built as a learning tool to help early and intermediate django developers get a better understanding, through practical application, of how to setup and configure a Django project.
 
-.. _django starters: https://github.com/tkjone/django-starters
+.. _wagtail starter kit: https://github.com/tkjone/wagtail-starter-kit
 
 Contributing
 ============
@@ -134,9 +134,9 @@ I am a believer in the community creating things together. If you are reading th
 Branches
 --------
 
-This repo's branches correspond to the version of Django being used.  This project will always default to the latest version of Django and the branches will follow the `django roadmap`_.  Thus, the next branch will be `django-starter-1.10.x`
+This repo's branches correspond to the version of Django being used.  This project will always default to the latest version of Django and the branches will follow the `django roadmap`_.  Currently there is only a master branch and it will stay this way until the next Django release (1.10).
 
 .. _django roadmap: https://www.djangoproject.com/weblog/2015/jun/25/roadmap/
-.. _prompts documentation: https://github.com/tkjone/django-starter/blob/django-starter-1.9.x/docs/prompts.rst
+.. _prompts documentation: https://github.com/tkjone/wagtail-starter-kit/blob/master/docs/prompts.rst
 
 
