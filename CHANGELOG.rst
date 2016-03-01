@@ -36,6 +36,7 @@ All enhancements and patches to cookiecutter-django will be documented in this f
 * ``tools.config.js`` - configured to reflect changed to static directory structure
 * ``webpack.config.js`` - configured to reflect changed to static directory structure
 * ``docs`` - updated the readme for the documentation.
+* ``tasks/css-dev`` - removed sourcemap generation
 
 [2016-02-28]
 ============

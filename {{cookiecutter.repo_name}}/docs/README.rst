@@ -25,23 +25,18 @@ The favicon is configured to be served in two way for this project:
 
 The reason for both is browser behavior can be strange for favicons.  This is an extra measure to help make sure that the favicon is handled correctly.  For more information read `Fail Proof Favicons`_.
 
-client side
------------
+**error pages**
 
-This project uses stylus as the default, hoever, the structure of the project is preprocessor agnostic both in the way that the ``static`` dir is setup and in the way that the gulp task ``css-dev`` and ``css-prod`` are setup.  If you do not want to use ``stylus`` simply head over to the ``tools/tasks`` directory and change the ``stylus`` variable to the preprocessor of your choice.
-
-error pages
------------
-
-This project comes with templates for ``400``, ``404`` and ``500``.  I have provided urls in the ``config/urls.py`` file so that you can test these while debug mode is set to ``True``.  To see what they look like, you can visit
-
-http://localhost:8111/400
-
-http://localhost:8111/404
+This project comes with templates for ``400``, ``404`` and ``500``.  I have provided urls in the ``config/urls.py``.  You can test the 500 page while in development, but if you want to test the ``400`` or ``404`` pages, you will need to set ``DEBUG=False``
 
 http://localhost:8111/500
 
 Keep in mind that when you are styling these, it is good practice to keep the styles and javascript inline just to be safe.
+
+client side
+-----------
+
+This project uses stylus as the default, hoever, the structure of the project is preprocessor agnostic both in the way that the ``static`` dir is setup and in the way that the gulp task ``css-dev`` and ``css-prod`` are setup.  If you do not want to use ``stylus`` simply head over to the ``tools/tasks`` directory and change the ``stylus`` variable to the preprocessor of your choice.
 
 commands
 --------

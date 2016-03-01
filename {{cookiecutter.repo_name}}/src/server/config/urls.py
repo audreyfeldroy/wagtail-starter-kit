@@ -9,8 +9,6 @@ from django.contrib import admin
 from django.contrib.staticfiles.storage import staticfiles_storage
 from django.http import HttpResponse
 from django.views.defaults import (
-    bad_request,
-    page_not_found,
     server_error
 )
 from django.views.generic.base import RedirectView
@@ -24,14 +22,6 @@ from wagtail.wagtailsearch import urls as wagtailsearch_urls
 
 urlpatterns = [
 
-    # www.example.com/400.html
-    url(
-        regex=r'^400/$',
-        view=bad_request),
-    # www.example.com/404.html
-    url(
-        regex=r'^404/$',
-        view=page_not_found),
     # www.example.com/500.html
     url(
         regex=r'^500/$',

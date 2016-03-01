@@ -135,7 +135,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.bool("DJANGO_ALLOWED_HOSTS", default=['*'])
 
 # ------------------------------------------------------------------------------
 # TEMPLATE CONFIGURATION
