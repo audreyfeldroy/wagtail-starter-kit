@@ -33,6 +33,40 @@ http://localhost:8111/500
 
 Keep in mind that when you are styling these, it is good practice to keep the styles and javascript inline just to be safe.
 
+**Customize Wagtail Admin**
+
+This project comes with the templates required to customize the pages for the wagtail admin site.  There are four templates:
+
+*branding_logo : base.html*
+
+.. code-block:: html
+
+    source
+    {% block branding_logo %}
+        <img src="{{ STATIC_URL }}images/custom-logo.svg" alt="Custom Project" width="80" />
+    {% endblock %}
+
+*branding_favicon : admin_base.html*
+
+.. code-block:: html
+
+    {% block branding_favicon %}
+        <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
+    {% endblock %}
+
+*branding_login : login.html*
+
+.. code-block:: html
+
+    {% block branding_login %}Sign in to Frank's Site{% endblock %}
+
+*branding_welcome : home.html*
+
+.. code-block:: html
+
+    {% block branding_welcome %}Welcome to Frank's Site{% endblock %}
+
+
 client side
 -----------
 
