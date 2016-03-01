@@ -7,40 +7,15 @@ When you run ``cookiecutter </path/to/coomiecutter/template>`` you will be asked
 Templated Values
 ================
 
+project_name:
+    Name of your project.  Can be anything you like.  This name is used to generate a default repo_name.
+
+    default: my project
+
 repo_name:
     What do you want to name your project repo?  No spaces.  Underscores or dashes only.
 
-    `default`: my_project
-
-project_name:
-    What do you want to name the folder that holds your Django source code?
-
-    default: src
-
-repo_root_path:
-    The path to your project.  This is for the provisioning so you can usually always leave it blank, unless you want to configure where your directory lives in Vagrant.
-
-    default: /home/vagrant/my_project
-
-project_root_path:
-    The path to your project source code (`project_name`).  Used by your provisioning scripts.
-
-    default: /home/vagrant/my_project/src
-
-django_reqs_path:
-    Path to your requirements directory.  Used by your provisioning scripts.
-
-    default: /home/vagrant/my_project/requirements
-
-django_default_settings:
-    Which settings file to you want to use?  Used by provisioning scripts.
-
-    default: config.settings.dev
-
-virtualenv_dir_path:
-    Path to your `virtualenv`. Used by provisioning scripts.
-
-    default: /home/vagrant/.virtualenvs
+    default: my_project
 
 db_engine:
     Which database do you want your project to use?  Postgres and sqlite are the options you have.  The project will configure correctly with whichever you choose and you can easily reconfigure the project after it's initialized if you don't like your choice.
@@ -67,10 +42,16 @@ db_name:
 
     default: my_project
 
-os_user:
+vm_user:
     Name of your Vagrant user.  If you did not specify, vagrant will default this to Vagrant.  This is fine, there is really no reason to change, unless you want every detail of your vagrant the same as your production server.
 
     default: vagrant
+
+django_login_username:
+    The username that will login to the django/wagtail admin dashboard
+
+django_login_password:
+    The password that will login to the django/wagtail admin dashboard
 
 author_name:
     Who created this project?  Either your company name, or your personal name.  Spaces are fine here.
@@ -87,8 +68,6 @@ license:
 current_year:
     The current calendar year.  This is used in your licenses.
 
-full_legal_name_of_project_owner:
-    Your full legail name, or the full legal name of the entitiy you are creating this project for.
 
 
 

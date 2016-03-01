@@ -73,6 +73,26 @@ This project comes with the templates required to customize the pages for the wa
     {% block branding_welcome %}Welcome to Frank's Site{% endblock %}
     {% endraw %}
 
+**settings**
+
++---------------------------+----------------------------------------+
+| Setting                   | value                                  |
++===========================+========================================+
+| database engine           | {{cookiecutter.db_engine}}             |
++---------------------------+----------------------------------------+
+| database name             | {{cookiecutter.db_name}}               |
++---------------------------+----------------------------------------+
+| database username         | {{cookiecutter.db_user}}               |
++---------------------------+----------------------------------------+
+| database password         | {{cookiecutter.db_password}}           |
++---------------------------+----------------------------------------+
+| database host             | {{cookiecutter.db_host}}               |
++---------------------------+----------------------------------------+
+| django superuser name     | {{cookiecutter.django_login_username}} |
++---------------------------+----------------------------------------+
+| django superuser password | {{cookiecutter.django_login_password}} |
++---------------------------+----------------------------------------+
+
 
 client side
 -----------

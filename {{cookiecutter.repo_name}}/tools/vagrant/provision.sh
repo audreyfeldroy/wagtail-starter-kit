@@ -3,16 +3,19 @@
 #-------------------------------------------------------------
 
 repo_name="{{ cookiecutter.repo_name }}"
-project_name="{{ cookiecutter.project_name }}"
-repo_dir="{{cookiecutter.repo_root_path}}"
-django_reqs="{{ cookiecutter.django_reqs_path }}"
-virtualenv_dir="{{ cookiecutter.virtualenv_dir_path }}"
+project_name="src"
+home_path="/home/vagrant"
+repo_dir="${home_path}/${repo_name}"
+django_reqs="${home_path}/${repo_name}/${project_name}/server/requirements/dev.txt"
+virtualenv_dir="${home_path}/.virtualenvs"
 db_engine="{{cookiecutter.db_engine}}"
 db_user="{{cookiecutter.db_user}}"
 db_password="{{cookiecutter.db_password}}"
 db_host="{{cookiecutter.db_host}}"
 db_name="{{cookiecutter.db_name}}"
-os_user="{{cookiecutter.os_user}}"
+vm_user="{{cookiecutter.vm_user}}"
+django_user="{{cookiecutter.django_login_username}}"
+django_pass="{{cookiecutter.django_login_pass}}"
 python_2="/usr/bin/python"
 python_3="/usr/bin/python3"
 software=(
@@ -91,7 +94,7 @@ source /home/vagrant/.profile
 
 # setup database
 logit "setting up project database"
-expect ${repo_dir}/tools/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_password} ${os_user}
+expect ${repo_dir}/tools/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_password} ${vm_user}
 
 {% endif %}
 #-------------------------------------------------------------
@@ -156,6 +159,6 @@ python ${repo_dir}/src/server/manage.py migrate
 #-------------------------------------------------------------
 # createsuperuser
 logit "creating project superuser"
-expect $repo_dir/tools/vagrant/expects/set_admin.exp ${os_user} ${repo_name} ${repo_dir} ${db_user} {{cookiecutter.author_email}} ${db_password}
+expect $repo_dir/tools/vagrant/expects/set_admin.exp ${vm_user} ${repo_name} ${repo_dir} ${django_user} {{cookiecutter.author_email}} ${django_pass}
 
 logit "provisioning complete"

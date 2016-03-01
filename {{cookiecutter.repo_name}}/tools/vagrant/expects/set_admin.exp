@@ -2,7 +2,7 @@
 
 set timeout 10
 
-set os_user      [lindex $argv 0]
+set vm_user      [lindex $argv 0]
 set repo_name    [lindex $argv 1]
 set repo_dir     [lindex $argv 2]
 set admin_user   [lindex $argv 3]
@@ -30,4 +30,4 @@ expect "Password (again):"
 send "${admin_pass}\r"
 
 # e.g. (django)vagrant@
-expect "(${repo_name})$os_user@"
+expect "(${repo_name})$vm_user@"
