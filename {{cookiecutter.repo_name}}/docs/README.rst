@@ -41,7 +41,6 @@ This project comes with the templates required to customize the pages for the wa
 
 .. code-block:: html
 
-    source
     {% block branding_logo %}
         <img src="{{ STATIC_URL }}images/custom-logo.svg" alt="Custom Project" width="80" />
     {% endblock %}
