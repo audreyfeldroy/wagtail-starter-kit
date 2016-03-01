@@ -41,29 +41,37 @@ This project comes with the templates required to customize the pages for the wa
 
 .. code-block:: html
 
+    {% raw %}
     {% block branding_logo %}
         <img src="{{ STATIC_URL }}images/custom-logo.svg" alt="Custom Project" width="80" />
     {% endblock %}
+    {% endraw %}
 
 *branding_favicon : admin_base.html*
 
 .. code-block:: html
 
+    {% raw %}
     {% block branding_favicon %}
         <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" />
     {% endblock %}
+    {% endraw %}
 
 *branding_login : login.html*
 
 .. code-block:: html
 
+    {% raw %}
     {% block branding_login %}Sign in to Frank's Site{% endblock %}
+    {% endraw %}
 
 *branding_welcome : home.html*
 
 .. code-block:: html
 
+    {% raw %}
     {% block branding_welcome %}Welcome to Frank's Site{% endblock %}
+    {% endraw %}
 
 
 client side
