@@ -40,6 +40,8 @@ DJANGO_APPS = (
 )
 
 THIRD_PARTY_APPS = (
+    'overextends',
+
     # wagtail dependencies
     'compressor',
     'taggit',
@@ -149,6 +151,7 @@ TEMPLATES = [
         ],
         'APP_DIRS': True,
         'OPTIONS': {
+            'builtins': ['overextends.templatetags.overextends_tags'],
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',

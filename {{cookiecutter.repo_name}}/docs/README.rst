@@ -33,6 +33,10 @@ http://localhost:8111/500
 
 Keep in mind that when you are styling these, it is good practice to keep the styles and javascript inline just to be safe.
 
+**Overextends**
+
+This third party django templating helper is added by default with this project.
+
 **Customize Wagtail Admin**
 
 This project comes with the templates required to customize the pages for the wagtail admin site.  There are four templates:
