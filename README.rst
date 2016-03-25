@@ -132,6 +132,10 @@ Contributing
 
 I am a believer in the community creating things together. If you are reading through anything I have written here and find that it is incorrect, outdated or lacking in proper documentation, please feel free to create an issue or fork this repo and make a PR.
 
+Branches
+--------
+
+If you are running tests for this project, change into the root directory of the cookiecutter and run ``py.test``.
 
 Branches
 --------
