@@ -9,6 +9,8 @@ All enhancements and patches to cookiecutter-django will be documented in this f
 
 **Changed**
 
+* Updated Wagtail from 1.3 to 1.4
+
 * Webpack Dev Task
 
     - Updated the task to point to stylesheets
