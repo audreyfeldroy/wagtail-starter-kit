@@ -13,6 +13,11 @@ All enhancements and patches to cookiecutter-django will be documented in this f
 
     - Updated the task to point to stylesheets
 
+* .eslintrc
+
+    - Added a new rule:  4 spaces for JS
+    - Updated documentation to explain the configuration file
+
 [2016-02-29]
 ============
 
