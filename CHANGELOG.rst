@@ -26,6 +26,10 @@ All enhancements and patches to cookiecutter-django will be documented in this f
 
     - corrected grammar and broken/incorrectly assigned links
 
+* Cookiecutter.json
+
+    - changed default values for database password and name
+
 [2016-02-29]
 ============
 
