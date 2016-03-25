@@ -126,6 +126,17 @@ Run this command when you want to produce production ready JS and CSS files.  Do
 
 Run this command when you are writing unit tests for your JS.  This will run them in the browser s you can see if you JS works as you expect.  It run on browsersync, webpack and tape.
 
+Configuration Files
+-------------------
+
+Configuration files are located in the ``tools/configs`` directory.
+
+**.eslintrc**
+
+This is the file that allows you to set specific rules for eslint.  As a default, I have configured it to follow the ES6 style guide proposed by airbnb.  To make adjustments, add them to the ``rules`` property.
+
+The only rule change imposed is to allow the JS to have 4 spaces.
+
 Project Overview
 ================
 
