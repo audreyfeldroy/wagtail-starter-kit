@@ -18,6 +18,10 @@ All enhancements and patches to cookiecutter-django will be documented in this f
     - Added a new rule:  4 spaces for JS
     - Updated documentation to explain the configuration file
 
+* Updated the repo README
+
+    - corrected grammar and broken/incorrectly assigned links
+
 [2016-02-29]
 ============
 

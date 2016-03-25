@@ -7,9 +7,9 @@ Welcome to Wagtail Starter Kit, a cookiecutter template for Django Projects.
 Overview
 ========
 
-Wagtail Starter Kit provides you with a flexible starting point for your Django project.  Included in this template is a Django development environment provided by vagrant, a project layout based on pydanny's `cookiecutter django`_ and `Two Scoops of Django`_ and a lean set of dependencies.  The goal is to provide you with everything you need to quickly and easily start a new Django project.
+Wagtail Starter Kit provides you with a flexible starting point for your Django project.  Included in this template is a Django development environment provided by vagrant, a project layout based on pydanny's `cookiecutter django`_ and `Two Scoops of Django`_ and a lean set of dependencies.  The goal is to provide you with everything you need to quickly and easily start a new Django Wagtail project.
 
-Wagtail Starter Kit uses a scaffolding tool called `cookiecutter`_.  Cookiecutter is similar to `Yeoman`_.  These tools are used to build out entire projects for you instead of you having to create files manually and modify their configurations.
+Wagtail Starter Kit uses a scaffolding tool called `cookiecutter`_.  Cookiecutter is similar to `Yeoman`_.  These tools are used to automatically build out entire projects instead of you having to create files manually and modify their configurations.
 
 .. _cookiecutter django: https://github.com/pydanny/cookiecutter-django
 .. _Two Scoops of Django: https://www.twoscoopspress.com/products/two-scoops-of-django-1-8
@@ -20,6 +20,7 @@ Quick Start
 ===========
 
 1. Install Cookiecutter
+-----------------------
 
 * OSX
    .. code-block:: bash
@@ -32,12 +33,13 @@ Quick Start
        pip install cookiecutter
 
 2. Build your Django project based on wagtail starter kit
+---------------------------------------------------------
 
    .. code-block:: bash
 
        cookiecutter https://github.com/tkjone/wagtail-starter-kit.git
 
-You are going to be prompted to answer some questions about your project and the answers you provide are used build and configure your it.  These questions are called `prompts`  If you leave a `prompts` blank, Cookiecutter will use the default answer in the square brackets.  For a list of the prompts used by this template, pleasse see the `prompts documentation`_
+You are going to be prompted to answer some questions about your project and the answers you provide will be used to build and configure your new Django Wagtail project.  These questions are called `prompts`.  If you leave a `prompt` blank, Cookiecutter will use the default answer in the square brackets.  For a list of the prompts used by this template, please see the `prompts documentation`_
 
 For example, let us pretend your a huge fan of Taye Diggs and you want to make a website celebrating his life.  This is how that would look:
 
@@ -52,6 +54,8 @@ The `wagtail starter kit` provides you with the following feature set:
 
 * Django 1.9.x
 
+* Wagtail 1.4.x
+
 * Vagrant Setup - Ubuntu 14.04
 
     This includes a 100% configured Vagrantfile with a Ubuntu 14.04 vagrant box.
@@ -62,7 +66,7 @@ The `wagtail starter kit` provides you with the following feature set:
 
 * Multiple virtualenvironments
 
-    The provisioning scripts will provide you with two virtualenvironments.  One uses Python 2 and the other uses Python 3.  No configuration required, no changes to the Ubuntu default version of Python, just switch between one or the other using virtualenvwrappers `workon` command
+    The provisioning scripts will provide you with two virtualenvironments.  One uses Python 2 and the other uses Python 3.  No configuration required, no changes to the Ubuntu default version of Python, just switch between one or the other using virtualenvwrapper's `workon` command
 
 * 12 Factor App
 
@@ -96,8 +100,6 @@ The `wagtail starter kit` provides you with the following feature set:
     * es6 support
     * eslint
 
-    and more!
-
 * Collaboration - dotfiles and documentation structure
 
     Documentation is important, wagtail-starter-kit provides you with a basic documentation structure that and dot-files for improved collaboration.
@@ -121,9 +123,9 @@ Constraints
 Deeper Dive
 ===========
 
-Check out `wagtail starter kit`_ for a step by step guide that explains this project in great detail.  Wagtail starter kit is built as a learning tool to help early and intermediate django developers get a better understanding, through practical application, of how to setup and configure a Django project.
+Check out `guides django`_ for a step by step guide that explains this project in great detail.  Wagtail starter kit is built as a learning tool to help early and intermediate django developers get a better understanding, through practical application, of how to setup and configure a Django project.
 
-.. _wagtail starter kit: https://github.com/tkjone/wagtail-starter-kit
+.. _guides django: https://github.com/tkjone/guides-django
 
 Contributing
 ============
