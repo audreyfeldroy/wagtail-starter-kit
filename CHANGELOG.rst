@@ -11,6 +11,8 @@ All enhancements and patches to cookiecutter-django will be documented in this f
 
 * Updated Wagtail from 1.3 to 1.4
 
+* Removed the 'compressor' third party package from INSTALLED_APPS.  This is a recent change outlined in the `Wagtail 1.4 release notes`_
+
 * Updated README with notes on how to test the cookiecutter
 
 * Webpack Dev Task
@@ -70,3 +72,4 @@ All enhancements and patches to cookiecutter-django will be documented in this f
 initial commit (@tkjone)
 
 .. _Semantic Versioning: http://semver.org/
+.. _Wagtail 1.4 release notes: http://docs.wagtail.io/en/v1.4.1/releases/1.4.html

@@ -43,7 +43,6 @@ THIRD_PARTY_APPS = (
     'overextends',
 
     # wagtail dependencies
-    'compressor',
     'taggit',
     'modelcluster',
 

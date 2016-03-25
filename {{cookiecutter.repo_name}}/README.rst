@@ -72,6 +72,17 @@ Gotchas
 
 The most common reason for this is that the port is not correct.  Check to see that you are supposed to be connecting on port ``8111``.  To do this, open a new terminal window, ``cd`` into the ``{{cookiecutter.repo_name}}`` directory and run ``vagrant port``.  This will show you two lines.  The second line will tell you which port to connect to.
 
+.. epigraph::
+
+   I tried to ``pip freeze`` inside of my vagrant machine and it returned ``locale.Error: unsupported locale setting``.
+
+I will look into fixing this within the provisioning script, but for the time being it can be resolved by reinstalling the language packages:
+
+.. code-block:: bash
+
+    sudo apt-get --reinstall install language-pack-es
+    sudo apt-get --reinstall install language-pack-kde-es
+
 
 .. _vagrant: https://www.vagrantup.com/downloads.html
 .. _virtualbox: https://www.virtualbox.org/
