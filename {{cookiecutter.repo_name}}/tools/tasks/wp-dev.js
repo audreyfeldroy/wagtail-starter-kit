@@ -35,7 +35,7 @@ module.exports = function () {
         });
 
         // compile css
-        gulp.watch(toolConfigs.paths.watch.styles, ['css-dev']);
+        gulp.watch(toolConfigs.paths.watch.stylesheets, ['css-dev']);
         // inject css into browsersync
         gulp.watch(toolConfigs.paths.watch.buildCSS, function() {
             gulp.src(toolConfigs.paths.watch.buildCSS)
