@@ -4,6 +4,15 @@ Change Log
 
 All enhancements and patches to cookiecutter-django will be documented in this file. This project adheres to `Semantic Versioning`_.
 
+[2016-03-25]
+============
+
+**Changed**
+
+* Webpack Dev Task
+
+    - Updated the task to point to stylesheets
+
 [2016-02-29]
 ============
 
