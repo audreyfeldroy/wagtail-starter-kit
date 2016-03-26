@@ -4,6 +4,15 @@ Change Log
 
 All enhancements and patches to cookiecutter-django will be documented in this file. This project adheres to `Semantic Versioning`_.
 
+[2016-03-26]
+============
+
+**Changed**
+
+* Added ``React`` to the webpack config - it is now an automatically configured option for developers - no extra weight added
+
+* Dev dependencies in package.json will not auto upgrade to latest versions.  At the time of this writing there are breaking changes with some of the latest packages.  This situation will be fixed shortly.
+
 [2016-03-25]
 ============
 

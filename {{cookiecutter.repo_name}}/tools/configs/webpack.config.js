@@ -54,7 +54,7 @@ const common = {
                 ],
                 query: {
                   plugins: ['transform-runtime'],
-                  presets: ['es2015', 'stage-0'],
+                  presets: ['es2015', 'stage-0', 'react'],
                 }
             },
         ],
