@@ -80,8 +80,7 @@ I will look into fixing this within the provisioning script, but for the time be
 
 .. code-block:: bash
 
-    sudo apt-get --reinstall install language-pack-es
-    sudo apt-get --reinstall install language-pack-kde-es
+    sudo apt-get install language-pack-en-base -y && sudo locale-gen en_US en_US.UTF-8 && sudo dpkg-reconfigure locales
 
 
 .. _vagrant: https://www.vagrantup.com/downloads.html
