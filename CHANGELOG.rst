@@ -15,6 +15,8 @@ All enhancements and patches to cookiecutter-django will be documented in this f
 
 * Updated README with notes on how to test the cookiecutter
 
+* Updated projects package.json dependency versions
+
 * Webpack Dev Task
 
     - Updated the task to point to stylesheets
