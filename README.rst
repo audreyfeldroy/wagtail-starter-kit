@@ -56,6 +56,10 @@ The `wagtail starter kit` provides you with the following feature set:
 
 * Wagtail 1.4.x
 
+* React
+
+    Project is configured to use React automatically.  While React might not be your thing, and I do want to keep this project flexible, it is very easy to remove the depedency.
+
 * Vagrant Setup - Ubuntu 14.04
 
     This includes a 100% configured Vagrantfile with a Ubuntu 14.04 vagrant box.
