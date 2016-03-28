@@ -4,6 +4,14 @@ Change Log
 
 All enhancements and patches to cookiecutter-django will be documented in this file. This project adheres to `Semantic Versioning`_.
 
+[2016-03-28]
+============
+
+**Changed**
+
+* react-dom added to the package.json
+
+
 [2016-03-26]
 ============
 
