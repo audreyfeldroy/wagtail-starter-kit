@@ -177,6 +177,71 @@ Contributing
 
 This section outlines how you want people to contribute to your project.
 
+Git Workflow: Forking and Branching
+-----------------------------------
+
+All contributors will Fork and Clone a copy of the official repository.  Run through the following steps:
+
+Lead Developer:
+...............
+
+1.  Initialize a new bare repository
+2.  Create a development branch
+3.  Add working project to master
+4.  pull working code to development branch
+
+Contributors:
+............
+
+1.  Fork the project repo
+2.  Clone a copy of the forked repo
+
+.. code-block:: bash
+
+    git clone https://user@github.com/user/repo.git
+
+4.  Add remote Repositories (The location of the official repo)
+
+.. code-block:: bash
+
+    git remote add upstream https://github.com/maintainer/repo
+
+5. When each contributor works on a new feature, they create a new branch based off their local main repo branch
+
+.. code-block:: bash
+
+    git checkout -b your-feature master
+
+6. Contributors work in this feature branch then when they are satisfied with their code, or the main branch has moved forward, run the following command:
+
+.. code-block:: bash
+
+    git pull --rebase upstream development
+
+8.  When ready to commit the branch - push to your public fork
+
+.. code-block:: bash
+
+    git push origin your-feature
+
+10. Make a PR
+
+Git Workflow: Feature Branch Naming Conventions
+-----------------------------------------------
+
+Please use dashes for names, not underscores or camel case:
+
+.. code-block:: bash
+
+    // bad :(
+    your_feature
+
+    // bad :(
+    yourFeature
+
+    // good :)
+    your-feature
+
 .. _quickstart: http://google.ca
 .. _standalone django scripts: http://www.b-list.org/weblog/2007/sep/22/standalone-django-scripts/
 .. _Extend the HomePage model: http://docs.wagtail.io/en/v1.3.1/getting_started/tutorial.html
