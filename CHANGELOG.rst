@@ -4,6 +4,13 @@ Change Log
 
 All enhancements and patches to cookiecutter-django will be documented in this file. This project adheres to `Semantic Versioning`_.
 
+[2016-03-29]
+============
+
+**Changed**
+
+* Added Wagtail API to the base configuration.
+
 [2016-03-28]
 ============
 

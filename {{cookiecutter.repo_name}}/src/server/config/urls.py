@@ -13,7 +13,7 @@ from django.views.defaults import (
 )
 from django.views.generic.base import RedirectView
 
-
+from wagtail.contrib.wagtailapi import urls as wagtailapi_urls
 from wagtail.wagtailcore import urls as wagtail_urls
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
@@ -49,6 +49,10 @@ urlpatterns = [
     url(
         regex=r'^documents/',
         view=include(wagtaildocs_urls)),
+    # www.example.com/api/vi/{pages, images, documents}
+    url(
+        regex=r'^api/',
+        view=include(wagtailapi_urls)),
     # www.example.com
     url(
         regex=r'',

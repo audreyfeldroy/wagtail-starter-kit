@@ -57,6 +57,8 @@ THIRD_PARTY_APPS = (
     'wagtail.wagtailsites',
     'wagtail.wagtailredirects',
     'wagtail.wagtailforms',
+    'wagtail.contrib.wagtailapi',
+    'rest_framework',
 )
 
 LOCAL_APPS = (
